@@ -1,0 +1,58 @@
+
+/* Set a fixed height of 60px for the navigation bar and align the texts to center. */
+#top-header{
+    box-shadow: 10px 10px 8px #888888;
+    text-align: center;
+    height: 60px;
+    background-color: white;
+    
+    margin: 0px;
+    padding:0px;
+    overflow: hidden;
+    
+}
+/* Remove padding from the parent div of logo. Make both parent and image floated towards left and assign widths to them. */
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 10%;
+}
+/* inside logo element */
+#logo img{
+    width: 60%;
+    float: left;
+    padding: 5px 0px;
+}
+#menu {
+    float: right;
+    width: 30%;
+    height: 60px;
+    margin: none;
+}
+/* Here, we remove the line breaks before and after each list item, to display them on one line*/
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    
+}
+
+#menu li:hover,#logo:hover {
+    background: grey;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
