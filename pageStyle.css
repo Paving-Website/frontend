@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 /* Set scroll behavior as smooth for the whole website*/
 html {
     scroll-behavior: smooth;
@@ -30,6 +29,57 @@ nav .logo {
     margin: 6px;
     font-size: 25px;
     cursor: pointer;
+}
+
+#logo img{
+    width: 150px;
+    position:fixed;
+    padding: 5px 5px;
+}
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: grey;
+        transition: top 1s ease;
+        font-size: 1.5rem;
+        display: none;
+        
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+        line-height:60px;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+#header-image-menu img{
+    top : 60px;
+    width: 100%;
+    height: auto;
 }
 
 #header-image-menu {
