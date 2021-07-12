@@ -1,58 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
-/* Set a fixed height of 60px for the navigation bar and align the texts to center. */
-#top-header{
-    box-shadow: 10px 10px 8px #888888;
-    text-align: center;
-    height: 60px;
-    background-color: white;
-    
-    margin: 0px;
-    padding:0px;
-    overflow: hidden;
-    
 }
-/* Remove padding from the parent div of logo. Make both parent and image floated towards left and assign widths to them. */
-#logo{
-    float: left;
-    padding: none;
-    margin: none;
-    height: 60px;
-    width: 10%;
+body  {
+    font-family: Verdana,sans-serif;
 }
-/* inside logo element */
-#logo img{
-    width: 60%;
-    float: left;
-    padding: 5px 0px;
+nav {
+    background: #fff!important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.8);
+    display: flex;
+    justify-content: space-between;
+    height:100px;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
 }
-#menu {
-    float: right;
-    width: 30%;
-    height: 60px;
-    margin: none;
+nav .mainMenu {
+    display: flex;
+    list-style: none;
 }
-/* Here, we remove the line breaks before and after each list item, to display them on one line*/
-#menu li {
+nav .mainMenu li a {
+    line-height: 70px;
     display: inline-block;
-}
-
-#menu li a {
-    display: block;
-    padding: 14px 16px;
+    padding: 15px;
     text-decoration: none;
-    color:black;
-    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+}
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+/*.fa-facebook:hover {color: rgb(0, 110, 255);}*/
+/*.fa-twitter:hover {color: rgb(86, 154, 243);}*/
+/*.fa-instagram:hover {color: rgb(255, 0, 191);}*/
+/*.fa-github:hover {color: rgb(255, 123, 0);}*/
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#logo img{
+    width: 150px;
     
+    position:fixed;
+    padding: 5px 5px;
 }
 
-#menu li:hover,#logo:hover {
-    background: grey;
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: grey;
+        transition: top 1s ease;
+        font-size: 1.5rem;
+        display: none;
+        
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+        line-height:60px;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
 }
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 0;
+#header-image-menu img{
+    vertical-align:middle;
+    top:80px;
+    left:0;
+    right:0;
+    height:1000px;
 }

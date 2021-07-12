@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Paving Mauritius</title>
-        <link rel="stylesheet" href="pageStyle.css">
-
-    </head>
-    <body>
-        
-        <!-- Header Menu of the Page -->
-        <header>
-                
-            <!-- Top header menu containing
-                logo and Navigation bar -->
-            <div id="top-header">
-                    
-                <!-- Logo -->
-                <div id="logo">
-                    <img src ="paving_logo_1_transparent.png" alt= "Paving Mauritius">
-                </div>
-                        
-                <!-- Navigation Menu -->
-                <nav>
-                    <div id="menu">
-                        <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Products</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <!-- Image menu in Header to contain an Image and
-                a sample text over that image -->
-            <div id="header-image-menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paving Mauritius</title>
+    <link rel="stylesheet" href="./pageStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+        <nav>
+            <div id="logo">
                 <img src ="paving_logo_1_transparent.png" alt= "Paving Mauritius">
             </div>
-        </header>
-        
-    </body>
-<html>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+
+            </ul>
+        </nav>
+        <div id="header-image-menu">
+            <img class = "head-image" src ="farshad-rezvanian-Eelegt4hFNc-unsplash.jpg" alt= "Paving Mauritius">
+        </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
