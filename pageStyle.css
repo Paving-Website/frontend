@@ -1,13 +1,45 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 /* Set scroll behavior as smooth for the whole website*/
 html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    font-family: Verdana,sans-serif;
+}
+nav {
+    background: #fff!important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.8);
+    display: flex;
+    justify-content: space-between;
+    height:100px;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    line-height: 70px;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+}
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
 nav .openMenu {
     font-size: 2rem;
     margin: 20px;
@@ -23,7 +55,6 @@ nav .closeMenu , .icons i {
 /*.fa-twitter:hover {color: rgb(86, 154, 243);}*/
 /*.fa-instagram:hover {color: rgb(255, 0, 191);}*/
 /*.fa-github:hover {color: rgb(255, 123, 0);}*/
-
 
 nav .logo {
     margin: 6px;
@@ -82,18 +113,11 @@ nav .logo {
     height: auto;
 }
 
-#header-image-menu {
-    margin-bottom: 5vw;
-}
 
 .line {
     margin-bottom: 20px;
 }
 
-
-#products {
-    scroll-snap-stop: always;
-}
 
 .paragraph-text .title {
     font-style: normal;
