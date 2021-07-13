@@ -5,6 +5,23 @@
         <link rel="stylesheet" href="./pageStyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              const uluru = { lat: -20.18163039005572, lng: 57.4482681715898 };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+              });
+            }
+          </script>
     </head>
     <body>
         
@@ -86,7 +103,7 @@
             <h3 class ="Contact-us">Contact Us</h3>
             <hr class = "line">
             <p class =" text-contact"> We will be happy to answer any of your questions! </p>
-            <form class ="contact-form" action="index1.html" method ="post">
+            <form class ="contact-form" action="index.html" method ="post">
                 <input type = "text" class="contact-form-text" placeholder ="Your name">
                 <input type = "text" class="contact-form-text" placeholder ="Your email">
                 <input type = "text" class="contact-form-text" placeholder ="Your phone number">
@@ -95,6 +112,18 @@
             </form>
         </div>
         
-        
+
+        <div>
+            <h3 class = "title">Our Location</h3>
+            <hr class = "line">
+        </div>
+        <!-- Map Viewer (Location) -->
+        <div id = "map">
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD99tSVhgwdbv8kMJJ3n-0a5M3fG8Aw6Ls&callback=initMap&libraries=&v=weekly"
+                async
+            ></script>
+        </div>
     </body>
 <html>
