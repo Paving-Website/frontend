@@ -82,8 +82,7 @@ nav .logo {
         background: grey;
         transition: top 1s ease;
         font-size: 1.5rem;
-        display: none;
-        
+        display: none;    
     }
     nav .mainMenu .closeMenu {
         display: block;
