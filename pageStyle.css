@@ -15,7 +15,7 @@ body  {
 }
 nav {
     background: #F5F5F5;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.6);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
     display: flex;
     justify-content: space-between;
     height:70px;
@@ -64,9 +64,7 @@ nav #logo {
 }
 
 nav #logo img{
-    width: 10%;
-    padding: 5px 5px;
-    
+    width: 12%;
 }
 nav #logo .mainTitle{
     margin-right: 10px;
@@ -81,7 +79,7 @@ nav #logo .mainTitle span{
 
 @media(max-width: 1000px){
     nav #logo img{
-        display:none;
+        width:20%;
     }
 }
 
@@ -121,6 +119,9 @@ nav #logo .mainTitle span{
     .icons i {
         display: inline-block;
         padding: 12px;
+    }
+    nav #logo img{
+       display:none;
     }
    
 }
