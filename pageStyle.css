@@ -14,11 +14,11 @@ body  {
     font-family: Verdana,sans-serif;
 }
 nav {
-    background: #fff!important;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.8);
+    background: #F5F5F5;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
     display: flex;
     justify-content: space-between;
-    height:100px;
+    height:70px;
     position:fixed;
     top:0;
     right:0;
@@ -29,7 +29,7 @@ nav .mainMenu {
     list-style: none;
 }
 nav .mainMenu li a {
-    line-height: 70px;
+    line-height: 40px;
     display: inline-block;
     padding: 15px;
     text-decoration: none;
@@ -38,7 +38,7 @@ nav .mainMenu li a {
     font-size: 17px;
 }
 nav .mainMenu li a:hover {
-    background: rgb(255,94,0);
+    background: #A9A9A9;
 }
 nav .openMenu {
     font-size: 2rem;
@@ -52,20 +52,35 @@ nav .closeMenu , .icons i {
     cursor: pointer;
 }
 /*.fa-facebook:hover {color: rgb(0, 110, 255);}*/
-/*.fa-twitter:hover {color: rgb(86, 154, 243);}*/
-/*.fa-instagram:hover {color: rgb(255, 0, 191);}*/
-/*.fa-github:hover {color: rgb(255, 123, 0);}*/
 
-nav .logo {
+
+nav #logo {
     margin: 6px;
-    font-size: 25px;
+    
     cursor: pointer;
+/*    border: 1px solid;*/
+    display:flex;
+    
 }
 
-#logo img{
-    width: 150px;
-    position:fixed;
-    padding: 5px 5px;
+nav #logo img{
+    width: 12%;
+}
+nav #logo .mainTitle{
+    margin-right: 10px;
+    line-height: 55px;
+    font-size: 20px;
+    
+}
+nav #logo .mainTitle span{
+    color:#0099ff;
+    font-size: 25px;
+}
+
+@media(max-width: 1000px){
+    nav #logo img{
+        width:20%;
+    }
 }
 
 @media(max-width: 800px){
@@ -93,7 +108,7 @@ nav .logo {
     }
     nav .openMenu {
         display: block;
-        line-height:60px;
+        line-height:30px;
     }
     nav .mainMenu li a:hover {
         background: none;
@@ -104,6 +119,10 @@ nav .logo {
         display: inline-block;
         padding: 12px;
     }
+    nav #logo img{
+       display:none;
+    }
+   
 }
 
 #header-image-menu img{
@@ -115,6 +134,15 @@ nav .logo {
 
 .line {
     margin-bottom: 20px;
+}
+
+#products .title, #about .title{
+    padding-top:30px;
+    margin-left:10px;
+}
+.about-text{
+    font-size:20px;
+    padding-bottom: 20px;
 }
 
 
@@ -151,3 +179,40 @@ nav .logo {
  .paragraph-text {
      font-size: 30px;
  }
+
+#contact{
+    background:white;
+    padding-top:30px;
+    padding-bottom:10px;
+    
+    
+}
+.contact-form{
+   width:97%;
+ 
+}
+.Contact-us, .text-contact,.content-form-submit{
+    margin-left:15px;
+}
+
+
+.contact-form-text{
+    display:block;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:12px 10px;
+    width:100%;
+    box-sizing:border-box;
+    margin-left: 15px;
+
+}
+.content-form-submit{
+    padding: 12px 20px;
+    background:black;
+    color:#F5F5F5;
+    text-transform:uppercase;
+    border:none;
+    
+}
+
+
