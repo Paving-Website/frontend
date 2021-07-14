@@ -200,7 +200,7 @@ hr {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .image-row {
       flex-direction: column;
     }
@@ -214,6 +214,7 @@ hr {
     background:white;
     padding-top:30px;
     margin-bottom: 50px;
+    padding-right: 1%;
 }
 .contact-form{
    width:97%;
