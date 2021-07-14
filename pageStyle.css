@@ -10,6 +10,7 @@ html {
     padding: 0;
 }
 
+
 body  {
     font-family: Verdana,sans-serif;
 }
@@ -125,24 +126,51 @@ nav #logo .mainTitle span{
    
 }
 
+#header-image-menu{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
 #header-image-menu img{
     top : 60px;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-image: url("paving_header.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align:center;
+    margin:auto;
+    padding:0;
 }
 
+/* #image-container {
+    height: 30%;
+} */
+/* .head-image{
+   position: absolute;
+} */
+
+h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: normal;
+    font-size: larger;
+    padding-left: 1%;
+}
 
 hr {
-    border-top: 0.5px solid grey;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-top: 0.5px solid #ccc;
     margin-bottom: 10px;
 }
 
-#products .title, #about .title{
+#location .title, #products .title, #about .title{
     padding-top:30px;
-    margin-left:10px;
 }
 .about-text{
-    font-size:20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 15px;
     padding-bottom: 20px;
 }
 
@@ -156,6 +184,8 @@ hr {
 .image-row {
     display: flex;
     margin-bottom: 50px;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
 .image-column {
@@ -189,7 +219,7 @@ hr {
    width:97%;
  
 }
-.Contact-us, .text-contact,.content-form-submit{
+.text-contact,.content-form-submit{
     margin-left:15px;
 }
 
@@ -209,12 +239,19 @@ hr {
     background:black;
     color:#F5F5F5;
     text-transform:uppercase;
-    border:none;
-    
+    border:none;   
+}
+
+.content-form-submit:hover {
+    background-color: rgb(179, 179, 171);
+    color: black;
 }
 
 #map {
     margin-bottom: 200px;
-  }
+}
 
-
+iframe {
+    padding-left: 1%;
+    padding-right: 1%;
+}
