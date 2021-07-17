@@ -138,6 +138,7 @@ nav #logo .mainTitle span{
     background-image: url("paving_header.png");
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     text-align:center;
     margin:auto;
     padding:0;
@@ -146,9 +147,9 @@ nav #logo .mainTitle span{
 /* #image-container {
     height: 30%;
 } */
-/* .head-image{
-   position: absolute;
-} */
+.head-image{
+   margin-top: 100px;
+}
 
 h3{
     font-family: "Segoe UI",Arial,sans-serif;
