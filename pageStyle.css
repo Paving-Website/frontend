@@ -8,6 +8,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -249,10 +250,58 @@ hr {
 }
 
 #map {
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 iframe {
     padding-left: 1%;
     padding-right: 1%;
 }
+
+#footer {
+    height: 100px;
+    background-color:black;
+    justify-content: space-between;
+    margin: 0px;
+    display:flex;
+    margin: 0px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+#footer h4{
+    top:5px;
+ 
+}
+
+#footer .center-box .content div{
+    padding:5px;
+}
+
+
+
+
+
+    
+
+
+
+
+#footer .fab fa-facebook:hover,#footer .fab fa-facebook:focus{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+
+}
+@media(max-width: 800px){
+    #footer{
+        display: flex;
+        flex-direction: column;
+        
+        height:50vh; 
+        padding-bottom: 10px;
+    }
+
+}
+
+
