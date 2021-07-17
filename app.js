@@ -1,6 +1,6 @@
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
+var mainMenu = document.querySelector('.mainMenu');
+var closeMenu = document.querySelector('.closeMenu');
+var openMenu = document.querySelector('.openMenu');
 
 
 
