@@ -8,7 +8,6 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 
@@ -71,9 +70,9 @@ nav #logo img{
 nav #logo .mainTitle{
     margin-right: 10px;
     line-height: 55px;
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
+
 nav #logo .mainTitle span{
     color:#0099ff;
     font-size: 25px;
@@ -114,7 +113,7 @@ nav #logo .mainTitle span{
     }
     nav .mainMenu li a:hover {
         background: none;
-        color: rgb(255, 123, 0);
+        color: rgb(86, 137, 231);
         font-size: 1.6rem;
     }
     .icons i {
@@ -136,21 +135,19 @@ nav #logo .mainTitle span{
     top : 60px;
     width: 100%;
     height: auto;
-    background-image: url("paving_header.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("paving_header_imgs/paving_header_img.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     text-align:center;
     margin:auto;
-    padding:0;
+    padding-top:0;
 }
+
 
 /* #image-container {
     height: 30%;
 } */
-.head-image{
-   margin-top: 100px;
-}
 
 h3{
     font-family: "Segoe UI",Arial,sans-serif;
@@ -194,17 +191,62 @@ hr {
     transition: transform .2s;
     flex: auto;
     padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    opacity: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1c87c9;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+.image-column .content:hover {
+    opacity: 1;
+}
+.image-column .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+.image-column .content:hover .text {
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+    filter: brightness(0.4);
+}
+
+.image-column img:hover{
+  filter: brightness(0.4);
 }
 
 .image-column:hover {
     zoom: 120%;
-    box-shadow: 1px 1px 8px 1px #dcdcdc
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .image-row {
       flex-direction: column;
+    }
+
+    #header-image-menu img{
+        padding-top:10%;
     }
  }
 
@@ -282,13 +324,6 @@ iframe {
 
 
 
-
-
-    
-
-
-
-
 #footer .fab fa-facebook:hover,#footer .fab fa-facebook:focus{
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
@@ -304,5 +339,3 @@ iframe {
     }
 
 }
-
-
