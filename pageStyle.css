@@ -24,6 +24,8 @@ nav {
     top:0;
     right:0;
     left:0;
+    overflow: hidden;
+    z-index: 300;
 }
 nav .mainMenu {
     display: flex;
@@ -192,7 +194,6 @@ hr {
     flex: auto;
     padding: 10px;
     position: relative;
-    overflow: hidden;
 }
 
 .content {
@@ -217,22 +218,20 @@ hr {
     opacity: 1;
 }
 .image-column .content .text {
-    height: 0;
-    opacity: 1;
+    height: 1;
     transition-delay: 0s;
     transition-duration: 0.4s;
 }
 
 .image-column .content:hover .text {
     opacity: 1;
-    transform: translateY(250px);
-    -webkit-transform: translateY(250px);
-    filter: brightness(0.4);
-}
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+} 
 
 .image-column img:hover{
   filter: brightness(0.4);
-}
+} 
 
 .image-column:hover {
     zoom: 120%;
@@ -311,14 +310,14 @@ iframe {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    
-}
-#footer h4{
-    top:5px;
- 
+    z-index: 10;
 }
 
-#footer .center-box .content div{
+#footer h4{
+    top:5px;
+}
+
+#footer .center-box .contentFooter div{
     padding:5px;
 }
 
