@@ -16,3 +16,18 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+function isNumber(evt){
+    var ch = String.fromCharCode(evt.which);
+    if(!(/[0-9+ ]/.test(ch))){
+        alert("digits only");
+        evt.preventDefault();
+    }
+}
+function isAlphabet(evt){
+    var ch = String.fromCharCode(evt.which);
+    if(!(/[a-zA-Z0-9 -]/.test(ch))){
+        
+        evt.preventDefault();
+    }
+}

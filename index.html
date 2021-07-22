@@ -14,7 +14,7 @@
                 
         <nav>
             <div id="logo">
-                <p class ="mainTitle" > <span>Paving</span> <span style="color:gray">Mauritius</span></p>
+                <p class ="mainTitle" > <span style=>Paving</span> <span style="color:gray ; font-size: 20px">Mauritius</span></p>
             </div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
             <ul class="mainMenu">
@@ -96,9 +96,10 @@
             <hr class = "line">
             <p class =" text-contact"> We will be happy to answer any of your questions! </p>
             <form class ="contact-form" action="index.html" method ="post">
-                <input type = "text" class="contact-form-text" placeholder ="Your name">
+                <input type = "text" class="contact-form-text" placeholder ="Your name" onkeypress="isAlphabet(event)">
                 <input type = "text" class="contact-form-text" placeholder ="Your email">
-                <input type = "text" class="contact-form-text" placeholder ="Your phone number">
+                <input type = "text" class="contact-form-text" placeholder ="Your phone number" onkeypress="isNumber(event)">
+                
                 <textarea class ="contact-form-text" placeholder = "Your message"></textarea>
                 <input type="submit" class="content-form-submit" value="send message">
             </form>

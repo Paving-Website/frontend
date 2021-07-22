@@ -24,7 +24,7 @@ nav {
     top:0;
     right:0;
     left:0;
-    overflow: hidden;
+    
     z-index: 300;
 }
 nav .mainMenu {
@@ -54,14 +54,12 @@ nav .closeMenu , .icons i {
     display: none;
     cursor: pointer;
 }
-/*.fa-facebook:hover {color: rgb(0, 110, 255);}*/
+
 
 
 nav #logo {
-    margin: 6px;
-    
+    margin: 6px;   
     cursor: pointer;
-/*    border: 1px solid;*/
     display:flex;
     
 }
@@ -122,9 +120,7 @@ nav #logo .mainTitle span{
         display: inline-block;
         padding: 12px;
     }
-    nav #logo img{
-       display:none;
-    }
+    
    
 }
 
