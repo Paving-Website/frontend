@@ -61,12 +61,9 @@ nav #logo {
     margin: 6px;   
     cursor: pointer;
     display:flex;
-    
+    padding-left: 1%;
 }
 
-nav #logo img{
-    width: 12%;
-}
 nav #logo .mainTitle{
     margin-right: 10px;
     line-height: 55px;
@@ -127,6 +124,7 @@ nav #logo .mainTitle span{
 #header-image-menu{
     padding-left: 1%;
     padding-right: 1%;
+    margin-bottom: 50px;
 }
 
 #header-image-menu img{
@@ -141,11 +139,6 @@ nav #logo .mainTitle span{
     margin:auto;
     padding-top:0;
 }
-
-
-/* #image-container {
-    height: 30%;
-} */
 
 h3{
     font-family: "Segoe UI",Arial,sans-serif;
@@ -177,6 +170,13 @@ hr {
     font-size: x-large;
 }
 
+ul {
+    font-size: 1em;
+    list-style-position: inside;
+    text-align: justify;
+    padding-left: 3%;
+}
+
 /*Flexbox added to make the images align side by side*/
 .image-row {
     display: flex;
@@ -194,12 +194,12 @@ hr {
 
 .content {
     opacity: 0;
-    font-size: 20px;
+    font-size: 1vw;
     position: absolute;
     top: 0;
     left: 0;
-    color: #1c87c9;
-    background-color: rgba(200, 200, 200, 0.5);
+    color: white;
+    background-color: rgba(107, 105, 105, 0.5);
     width: 100%;
     height: 100%;
     -webkit-transition: all 400ms ease-out;
@@ -208,7 +208,7 @@ hr {
     -ms-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
     text-align: center;
-}
+}  
 
 .image-column .content:hover {
     opacity: 1;
@@ -221,8 +221,8 @@ hr {
 
 .image-column .content:hover .text {
     opacity: 1;
-    transform: translateY(150px);
-    -webkit-transform: translateY(150px);
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
 } 
 
 .image-column img:hover{
@@ -242,6 +242,10 @@ hr {
 
     #header-image-menu img{
         padding-top:10%;
+    }
+
+    .content{
+        font-size: 1.5vh;
     }
  }
 
