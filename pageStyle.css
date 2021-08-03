@@ -120,27 +120,8 @@ nav #logo .mainTitle span{
    
 }
 
-#header-image-menu{
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-bottom: 50px;
-}
-
-#header-image-menu img{
-    top : 10px;
-    width: 100%;
-    height: auto;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("paving_header_imgs/paving_header_img.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align:center;
-    margin:auto;
-    padding-top:0;
-}
-
 .slider{
-    height: 90vh;
+    left: 5%; 
     overflow: hidden;
     position: relative;
     
@@ -181,7 +162,7 @@ input[name ="radio-btn"]{
 
 }
 .slide img{
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 #radio1:checked ~ .first{
@@ -218,6 +199,19 @@ input[name ="radio-btn"]{
     transition: 0.6s;
     
 }
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+}
+
 
 
 h3{
