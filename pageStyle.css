@@ -162,6 +162,10 @@ nav #logo .mainTitle span{
     cursor: pointer;
 }
 
+.manual-btn:hover{
+    background-color: white;
+}
+
 .slides{
     width: 400%;
     height: 100%;
