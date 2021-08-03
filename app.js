@@ -27,7 +27,6 @@ function isNumber(evt){
 function isAlphabet(evt){
     var ch = String.fromCharCode(evt.which);
     if(!(/[a-zA-Z0-9 -]/.test(ch))){
-        
         evt.preventDefault();
     }
 }
