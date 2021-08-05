@@ -167,6 +167,7 @@ input[name ="radio-btn"]{
     width: 95%;
     height: 100%;
 }
+
 #radio1:checked ~ .first{
     margin-left: 0%;
 
@@ -185,6 +186,28 @@ input[name ="radio-btn"]{
     margin-left: -75%;
 
 }
+
+/* #radio5:checked ~ .first{
+    margin-left: -0%;
+
+}
+
+#radio6:checked ~ .first{
+    margin-left: -25%;
+
+}
+
+#radio7:checked ~ .first{
+    margin-left: -50%;
+
+}
+
+#radio8:checked ~ .first{
+    margin-left: -75%;
+
+} */
+
+
 .navigation-auto{
     position: absolute;
     bottom: 20px;

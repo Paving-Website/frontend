@@ -40,7 +40,7 @@ function setCounter(n){
 setInterval(function(){
     
     if(counter===1){
-        document.querySelector('.slide').style.transition = ' 0.01s';
+        document.querySelector('.slide').style.transition = '0.01s';
     }
     else{
         document.querySelector('.slide').style.transition ='2s';
@@ -48,4 +48,4 @@ setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
     counter++;
     if (counter > 4) counter = 1;
-}, 2000);
+}, 3000);
