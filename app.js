@@ -4,10 +4,10 @@ var openMenu = document.querySelector('.openMenu');
 
 
 
-
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 mainMenu.addEventListener('click',close);
+
 
 function show(){
     mainMenu.style.display = 'flex';
@@ -34,8 +34,5 @@ var counter = 1;
 setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if(counter>4){
-        counter=1;
-    }
-},5000);
-
+    if (counter > 4) counter = 1;
+}, 2000);
