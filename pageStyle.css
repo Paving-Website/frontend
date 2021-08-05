@@ -122,7 +122,8 @@ nav #logo .mainTitle span{
 }
 
 .slider{
-    left: 5%; 
+    top: 30px;
+    left: 2.5%; 
     overflow: hidden;
     position: relative;
     
@@ -148,6 +149,7 @@ nav #logo .mainTitle span{
 }
 
 .slides{
+    
     width: 400%;
     height: 100%;
     display: flex;
@@ -159,11 +161,11 @@ input[name ="radio-btn"]{
 }
 .slide{
     width: 25%;
-    transition: 0.5s;
+    /* transition: 0.01s; */
 
 }
 .slide img{
-    width: 90%;
+    width: 95%;
     height: 100%;
 }
 #radio1:checked ~ .first{
@@ -229,7 +231,7 @@ hr {
     margin-bottom: 10px;
 }
 #products .title{
-    padding-top:30px; 
+    padding-top:110px; 
 }
 
 #location .title, #about .title{
@@ -287,6 +289,7 @@ ul {
     transition: all 400ms ease-out;
     text-align: center;
 }  
+
 
 .image-column .content:hover {
     opacity: 1;

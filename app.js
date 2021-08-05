@@ -31,8 +31,21 @@ function isAlphabet(evt){
         evt.preventDefault();
     }
 }
+// when you click, set counter to that
 var counter = 1;
+
+function setCounter(n){
+    counter = n;
+}
+
 setInterval(function(){
+    
+    if(counter===1){
+        document.querySelector('.slide').style.transition = ' 0.01s';
+    }
+    else{
+        document.querySelector('.slide').style.transition ='2s';
+    }
     document.getElementById('radio' + counter).checked = true;
     counter++;
     if(counter>4){
