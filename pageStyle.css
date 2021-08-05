@@ -120,14 +120,7 @@ nav #logo .mainTitle span{
    
 }
 
-.slider{
-    top: 30px;
-    left: 2.5%; 
-    overflow: hidden;
-    position: relative;
-    
 
-}
 .navigation-manual{
     position: absolute;
     bottom: 20px;
@@ -146,10 +139,16 @@ nav #logo .mainTitle span{
 .manual-btn:hover{
     background-color: white;
 }
+.slider{
+    top: 30px;
+    left: 2.5%; 
+    overflow: hidden;
+    position: relative;
 
-.slides{
-    
-    width: 400%;
+}
+
+.slides{  
+    width: 800%;
     height: 100%;
     display: flex;
 
@@ -159,7 +158,7 @@ input[name ="radio-btn"]{
     visibility: hidden;
 }
 .slide{
-    width: 25%;
+    width: 12.5%;
     /* transition: 0.01s; */
 
 }
@@ -174,39 +173,38 @@ input[name ="radio-btn"]{
 }
 
 #radio2:checked ~ .first{
-    margin-left: -25%;
+    margin-left: -12.5%;
 
 }
 
 #radio3:checked ~ .first{
-    margin-left: -50%;
+    margin-left: -25%;
 
 }
 #radio4:checked ~ .first{
-    margin-left: -75%;
+    margin-left: -37.5%;
 
 }
 
-/* #radio5:checked ~ .first{
-    margin-left: -0%;
+#radio5:checked ~ .first{
+    margin-left: -50%;
 
 }
 
 #radio6:checked ~ .first{
-    margin-left: -25%;
+    margin-left: -62.5%;
 
 }
 
 #radio7:checked ~ .first{
-    margin-left: -50%;
+    margin-left: -75%;
 
 }
 
 #radio8:checked ~ .first{
-    margin-left: -75%;
+    margin-left: -87.5%;
 
-} */
-
+}
 
 .navigation-auto{
     position: absolute;
@@ -234,6 +232,19 @@ input[name ="radio-btn"]{
     background: white;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: white;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background: white;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background: white;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8{
     background: white;
 }
 
